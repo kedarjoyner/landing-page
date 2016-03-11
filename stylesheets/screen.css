@@ -6,7 +6,7 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  background: linear-gradient(rgba(51, 51, 51, 0.5), rgba(217, 46, 39, 0.3)), url("../images/new-york.jpg");
+  background: linear-gradient(#333333, rgba(217, 46, 39, 0.3)), url("../images/new-york.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -26,29 +26,45 @@ body .navbar-brand {
 body .nav-style {
   background-color: #222222;
 }
+/* line 40, ../sass/screen.scss */
+body .envelope-style {
+  padding-left: 5px;
+}
 
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 h1 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 5em;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 #content {
   margin: 0 auto;
   text-align: center;
   padding-top: 25%;
-  text-shadow: 0 2.5px 3px rgba(0, 0, 0, 0.4), 0 4px 5px rgba(0, 0, 0, 0.1), 0px 5px 30px rgba(0, 0, 0, 0.1);
 }
-/* line 59, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 #content hr {
   width: 50%;
-  padding: 10px 0;
+  padding: 15px 0;
   border-top: 1px solid #f8f8f8;
 }
-/* line 64, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 #content .sub-header {
   font-size: 1.8em;
-  padding: 10px 0;
+  padding: 20px 0;
+}
+/* line 71, ../sass/screen.scss */
+#content .btn-style {
+  font-size: 1.5em;
+  color: white;
+  padding: 18px 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  border: 5px solid white;
+  background: none;
 }
