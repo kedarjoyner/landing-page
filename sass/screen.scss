@@ -2,27 +2,67 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 // @import "compass/reset";
 
-// Body
 
+//Variables
+
+$black: #222222;
+$shadow: #f8f8f8;
+$body-font: "Open Sans", Helvetica, Arial, sans-serif;
+$body-weight: 300;
+$h1: "Montserrat", Helvetica, Arial, sans-serif;
+$h1-weight: 700;
+$header-gradient: linear-gradient(rgba(51, 51, 51, .5), rgba(217, 46, 39, 0.3));
+
+
+// Body and Nav Styling
 body {
-  background: url("../images/new-york.jpg");
+  font-family: $body-font;
+  font-weight: $body-weight;
+  background: $header-gradient, url("../images/new-york.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
+
+  .navbar-inverse .navbar-nav>li>a {
+    font-size: 1.2em;
+  }
+  .navbar-brand {
+    font-family: $h1;
+    font-size: 2em;
+  }
+  .nav-style {
+    background-color: $black;
+  }
 }
 
-// Main Content
+// Headers
+h1 {
+  font-family: $h1;
+  font-weight: $h1-weight;
+  font-size: 5em;
+}
 
+
+// Main Content
 #content {
   margin: 0 auto;
   text-align: center;
   padding-top: 25%;
+  text-shadow: 0 4px 3px rgba(0,0,0,0.4),
+               0 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
 
-  h1 {
-    font-size: 5em;
+  hr {
+    width: 50%;
+    padding: 10px 0;
+    border-top: 1px solid $shadow;
+  }
+  .sub-header {
+    font-size: 1.8em;
+    padding: 10px 0;
   }
 }
